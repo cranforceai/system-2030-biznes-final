@@ -3,13 +3,14 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
+  base: "./",
   build: {
-    outDir: "dist" // <- tu wskazujemy folder dla Vercel
+    outDir: "dist",
   },
   server: {
-    host: true
+    host: true,
   },
   preview: {
-    host: true
-  }
+    host: true,
+  },
 });
